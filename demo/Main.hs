@@ -32,5 +32,5 @@ myFoo :: Foo
 myFoo = Foo "hello" ('x', 5)
 
 main :: IO ()
-main = print $ get  bar $ put (bar ⊙ two) myFoo 100
+main = print $ get bar $ put (bar ⊙ two) myFoo 100
 -- prints "(4, 100)"
