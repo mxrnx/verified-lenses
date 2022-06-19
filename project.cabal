@@ -1,0 +1,24 @@
+name:          project
+version:       0.0.0
+cabal-version: >= 1.10
+build-type:    Simple
+
+library
+  default-language: Haskell2010
+  hs-source-dirs:   lib
+  build-depends:    base
+  exposed-modules:  Control.Lens
+  autogen-modules:  Control.Lens
+  exposed-modules:  Control.Lens.List
+  autogen-modules:  Control.Lens.List
+  exposed-modules:  Control.Lens.Record
+  autogen-modules:  Control.Lens.Record
+  exposed-modules:  Control.Lens.Tuple
+  autogen-modules:  Control.Lens.Tuple
+
+executable demo
+  default-language: Haskell2010
+  hs-source-dirs:   demo
+  main-is:          Main.hs
+  build-depends:    base
+                  , project

@@ -1,0 +1,7 @@
+*.agda~
+*.agdai
+_build
+build
+dist-newstyle/
+lib/
+*.vim
